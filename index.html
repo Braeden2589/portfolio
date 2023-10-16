@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/242b318be3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header Section-->
+    <header id="header">
+        <div class="container">
+            <!--Nav Bar-->
+            <nav>
+                <img src="assets/logo.png" class="logo" alt="logo">
+                <ul id="nav-bar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times-circle" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+            <!--Header Text-->
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Braeden Ongansie</span><br>Welcome to my portfolio</h1>
+            </div>
+        </div>
+    </header>
+    <!--About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/me.jpg" alt="Photo of Braeden">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Driven by a strong work ethic and diligence, I am committed to achieving my personal goals. Collaborative by nature, I find joy in working with others and thrive on continuous learning. My passion lies in the dynamic realm of technology and its transformative impact on people's lives. Aspiring to contribute to the fields of technology and science, I am genuinely excited about the endless possibilities they hold.</p>
+                    <br>
+                    <p>Eager to embrace new challenges, I am not only open to learning but also enthusiastic about stepping out of my comfort zone. My motivation stems from a genuine curiosity to solve out-of-the-box problems. I look forward to the journey ahead, where I can leverage my skills and knowledge to make meaningful contributions to the ever-evolving landscape of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Typescript, Bootstrap, Canva</li>
+                            <li><span>Databases</span><br>MySQL, MSSQL</li>
+                            <li><span>Other</span><br>PlanetPress suite</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>BLUERACCOON | SOFTWARE DEVELOPMENT MANAGER</li>
+                            <li><span>2022 - 2023</span><br>OBJECTIF LUNE SA/BLUERACCOON | SOFTWARE DEVELOPER</li>
+                            <li><span>2021 - 2022</span><br>OBJECTIF LUNE SA | TECHNICAL CONSULTANT</li>
+                            <li><span>2017 - 2020</span><br>MR PRICE GROUP | STORE ASSOCIATE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Responsive Web Design Certificate| <a target="_blank" href="https://www.freecodecamp.org/certification/BraedenOngasnie/responsive-web-design">freeCodeCamp</a></li>
+                            <li><span>2017- 2020</span><br>Bsc Computer Science | University of Western Cape</li>
+                            <li><span>2012- 2016</span><br>National Senior Certificate | Eben Donges High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="assets/proj-1.png" alt="Bit Coin Image">
+                    <div class="layer">
+                        <h3>Crypto Currency Website</h3>
+                        <p>See the up to date pricing of the most popular cryto coins</p>
+                        <a href="https://codepen.io/Braeden-the-bold/pen/XWowoeR"><i class="fas fa-external-link-alt fa-lg" style="color: #c1ff72;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/proj-2.jpg" alt="Weather Icon">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A simple weather app, which allows you to search your countries name and see the current weather in that location</p>
+                        <a href="#"><!--<i class="fas fa-external-link-alt fa-lg" style="color: #c1ff72;"></i>-->Soon</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/proj-3.jpg" alt="QR Icon">
+                    <div class="layer">
+                        <h3>QR Code Generator</h3>
+                        <p>Convert text or URL links into QR codes</p>
+                        <a href="https://codepen.io/Braeden-the-bold/pen/rNogPGr"><i class="fas fa-external-link-alt fa-lg" style="color: #c1ff72;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact Form-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Get in Touch</h1>
+                    <p><i class="far fa-envelope"></i> ongansiebraeden@gmail.com</p>
+                    <div class="socails">
+                        <a href="www.linkedin.com/in/braeden-ongansie-0529a91b9"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/Braeden Ongansie CV.pdf" download="" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <textarea name="message" row="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="confirmSubmit"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="copyright">
+        <p>Copyright © Braeden Ongansie. Thank you for viewing my portfolio it is currently a work in progress and will updated regularly.<br>Any feed back is appreciated (Please use the contact form)</p>
+    </div>
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    var navBar = document.getElementById("nav-bar")
+
+
+    function opentab(tabname){
+        for (tablink of tabLinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabContents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function opennav(){
+        navBar.style.right = "0";           
+    }
+
+    function closenav(){
+        navBar.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwbsv8mRROUmJ7wdu7Hc78gKHfj-jVkhfxTQuz3aa-H1RazxgBusmv4-eyx2mpRSkYHrw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const confirmSubmit = document.getElementById("confirmSubmit")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            confirmSubmit.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                confirmSubmit.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
